@@ -1,0 +1,8 @@
+{
+  "name": "Veto",
+  "app_id": "816df49b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

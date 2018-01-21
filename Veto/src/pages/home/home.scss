@@ -1,0 +1,30 @@
+page-home {
+	.bkg {
+		background-image: url(../assets/imgs/UI/homepage_new.png);
+	}
+	.bkg{
+		background-size: cover;
+
+	}
+	.bkg{
+		background-image: 100vh;
+
+	}
+	.bkg{
+		-webkit-background-size: cover;
+
+	}
+	
+
+
+	#logBtn{
+		margin-top: 1.8vh;
+        // padding-left: 42%;
+	}
+
+    #btns {
+        // padding-top : 50vh;
+      margin-bottom: 10vh !important;  
+    }
+
+}

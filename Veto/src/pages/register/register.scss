@@ -1,0 +1,109 @@
+
+@import "roboto";
+@import "noto-sans";
+
+page-register {
+	.regbkg {
+		background-image: url(../assets/imgs/UI/registerationbk2.png) !important;
+		// background-repeat: no-repeat;
+		// background-position: center;
+		background-image: 999vh;
+		background-size: cover !important;
+		-webkit-background-size: cover !important;
+		
+	}
+	// .regbkg {
+	// 	background-image: url(../assets/imgs/UI/registerationbk2.png);
+	// }
+	// .regbkg{
+	// 	background-size: cover;
+
+	// }
+	// .regbkg{
+	// 	background-image: 100vh;
+
+	// }
+	// .regbkg{
+	// 	-webkit-background-size: cover;
+
+	// }
+
+	
+	#chk{
+		color: white;
+		font-size:40px;
+		padding-top: 20vh;
+		padding-left: 150px;
+	}
+
+	#ic{
+		color: white;
+		font-size: 22px;
+		float: right;
+
+	}
+
+	#list{
+		padding-top: 40vh;
+		color: blue;
+	}
+
+	.trans {
+		background-color: transparent !important;
+		//font-family:"Trebuchet MS", Helvetica, sans-serif;
+		
+	}
+
+	#txt{
+		//font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-size: 15px;
+		padding-top: 30vh;
+	}
+
+	p{
+		color: white;
+		padding-left: 3vh;
+		font-size: 15px;
+		font-family: "roboto";
+	}
+
+	#yog{
+		font-size: 15px;
+		font-family: "roboto";	
+	}
+
+	#ava{
+		color: white;
+		padding-left: 1vh;
+		// padding-top: 20px;
+	}
+
+
+	#auth{
+		color: white;
+		padding-left: 1vh;
+
+	}
+
+
+	// .regbkg{
+	// 	background-size: cover;
+
+	// }
+	// .regbkg{
+	// 	background-image: 100%;
+
+	// }
+	// .regbkg{
+	// 	-webkit-background-size: cover;
+
+	// }
+	// .regbkg{
+	// 	-moz-background-size: cover;
+
+	// }
+	// .regbkg{
+	// 	-o-background-size: cover;
+
+	// }
+}
