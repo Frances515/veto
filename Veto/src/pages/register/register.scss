@@ -30,7 +30,7 @@ page-register {
 
 	
 	#chk{
-		// color: white;
+		 color: white;
 		// font-size:40px;
 		// padding-top: 20vh;
 		 padding-left: 150px;
@@ -56,25 +56,41 @@ page-register {
 
 	#txt{
 		//font-family: "Trebuchet MS", Helvetica, sans-serif;
-		font-size: 15px;
+		//font-size: 15px;
 		padding-top: 30vh;
 	}
 
 	p{
 		color: white;
 		padding-left: 3vh;
-		font-size: 15px;
+		//font-size: 15px;
+		font-family: "roboto";
+	}
+
+	#avatar{
+		color: white;
+		padding-left: 3vh;
+		//font-size: 15px;
+		font-family: "roboto";
+	}
+
+	#authentication{
+		color: white;
+		padding-left: 3vh;
+		//font-size: 15px;
 		font-family: "roboto";
 	}
 
 	#yog{
-		font-size: 15px;
+		//font-size: 15px;
 		font-family: "roboto";	
 	}
 
 	#ava{
 		color: white;
 		padding-left: 1vh;
+		font-size: 3vh;
+		padding-bottom: 2vh;
 		// padding-top: 20px;
 	}
 
@@ -82,28 +98,19 @@ page-register {
 	#auth{
 		color: white;
 		padding-left: 1vh;
+		font-size: 3vh;
+		padding-bottom: 2vh;
 
 	}
 
+	#help{
+		color: white;
+		float: left;
+		font-size: 3vh;
+		padding-right: 15vh;
+		
+	}
 
-	// .regbkg{
-	// 	background-size: cover;
+	
 
-	// }
-	// .regbkg{
-	// 	background-image: 100%;
-
-	// }
-	// .regbkg{
-	// 	-webkit-background-size: cover;
-
-	// }
-	// .regbkg{
-	// 	-moz-background-size: cover;
-
-	// }
-	// .regbkg{
-	// 	-o-background-size: cover;
-
-	// }
 }

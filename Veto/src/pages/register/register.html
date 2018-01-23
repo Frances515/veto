@@ -39,20 +39,43 @@
     <ion-label color="light">Avatar</ion-label>
   </ion-item> -->
   
-  <p>Avatar<ion-icon id="ava" name="add"></ion-icon></p>
+<!--   <p>Avatar<ion-icon id="ava" name="add"></ion-icon></p> -->
+
+<div id="avatar">
+Avatar<button ion-button icon-only clear>
+  <ion-icon id="ava" name="add"></ion-icon>
+</button>
+</div>
+
+
   <!-- <ion-item class="trans">
      <ion-label color="light">Authentication</ion-label>
   </ion-item> -->
-  <p>Authentication<ion-icon id="auth" name="add"></ion-icon><br><ion-icon name="help-circle"></ion-icon>
-  </p>
+  <!-- <p>Authentication<ion-icon id="auth" name="add"></ion-icon><br><ion-icon name="help-circle"></ion-icon>
+  </p> -->
+
+  <div id="authentication">
+    Authentication<button ion-button icon-only clear>
+  <ion-icon id="auth" name="add"></ion-icon>
+</button>
+<!-- <button ion-button icon-only clear><ion-icon id="help" name="help-circle"></ion-icon></button>
+ -->  </div>
   
+<!-- <br>
+<button ion-button icon-only clear><ion-icon id="help" name="help-circle"></ion-icon></button>
+  </p> -->
+
   
+
+
+  
+
   
   <ion-footer>
-      <!-- <ion-icon id="chk" name="checkmark" (click)="login_page()"></ion-icon> -->
-      <<button ion-button icon-only>
-  <ion-icon  name="home"></ion-icon>
+      <button ion-button icon-only clear (click)="login_page()">
+  <ion-icon id="chk" name="checkmark"></ion-icon>
 </button>
+
   </ion-footer>
   
   </ion-content>
