@@ -22,4 +22,20 @@ export class WelcomePage {
     console.log('ionViewDidLoad WelcomePage');
   }
 
+  candidate_Page(): void {
+    this.navCtrl.push('CandidatePage');
+  }
+
+  vote_Page(): void {
+  	this.navCtrl.push('VotePage');
+  }
+
+  statistics_Page(): void {
+  	this.navCtrl.push('StatisticsPage');
+  }
+
+  general_Page(): void {
+  	this.navCtrl.push('GeneralPage');
+  }
+
 }
