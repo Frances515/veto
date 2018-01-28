@@ -1,0 +1,43 @@
+page-welcome {
+	.welbk{
+		background-image: url(../assets/imgs/UI/welcomebk.png) !important;
+		background-image: 999vh;
+		background-size: cover !important;
+		-webkit-background-size: cover !important;
+	}
+
+	#wel{
+		font-size: 39px;
+		margin-top: 3.2em;
+		margin-left: 1.4em;
+		font-family: "Roboto", "Helvetica Neue", sans-serif;
+		color: white;
+	}
+
+	#candBtn{
+		color: white;
+		text-transform: none;
+	}
+
+	 #btns {
+      margin-bottom: 10vh !important;  
+      padding-left: 1.6vh;
+      padding-right: 1.6vh;
+    }
+
+    #voteBtn{
+    	color: white;
+		text-transform: none;
+    }
+
+    #statBtn{
+    	color: white;
+		text-transform: none;
+    }
+
+    #genBtn{
+    	color: white;
+		text-transform: none;
+    }
+
+}

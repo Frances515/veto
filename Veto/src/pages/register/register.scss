@@ -4,7 +4,7 @@
 
 page-register {
 	.regbkg {
-		background-image: url(../assets/imgs/UI/registerationbk2.png) !important;
+		background-image: url(../assets/imgs/UI/registerationbk.png) !important;
 		// background-repeat: no-repeat;
 		// background-position: center;
 		background-image: 999vh;
@@ -12,27 +12,18 @@ page-register {
 		-webkit-background-size: cover !important;
 		
 	}
-	// .regbkg {
-	// 	background-image: url(../assets/imgs/UI/registerationbk2.png);
-	// }
-	// .regbkg{
-	// 	background-size: cover;
 
-	// }
-	// .regbkg{
-	// 	background-image: 100vh;
+	#reg{
+		font-size: 39px;
+		margin-top: 3.2em;
+		margin-left: 1.4em;
+		font-family: "Roboto", "Helvetica Neue", sans-serif;
 
-	// }
-	// .regbkg{
-	// 	-webkit-background-size: cover;
-
-	// }
-
+	}
 	
+
 	#chk{
 		 color: white;
-		// font-size:40px;
-		// padding-top: 20vh;
 		 padding-left: 150px;
 	}
 
@@ -50,56 +41,56 @@ page-register {
 
 	.trans {
 		background-color: transparent !important;
-		//font-family:"Trebuchet MS", Helvetica, sans-serif;
+		
 		
 	}
 
 	#txt{
-		//font-family: "Trebuchet MS", Helvetica, sans-serif;
-		//font-size: 15px;
-		padding-top: 30vh;
+		// padding-top: 30vh;
 	}
 
 	p{
 		color: white;
 		padding-left: 3vh;
-		//font-size: 15px;
 		font-family: "roboto";
 	}
 
 	#avatar{
 		color: white;
 		padding-left: 3vh;
-		//font-size: 15px;
 		font-family: "roboto";
-	}
+		text-transform: none;
+		font-size: 13.6px;
+		text-decoration: none;
+			}
 
 	#authentication{
 		color: white;
 		padding-left: 3vh;
-		//font-size: 15px;
 		font-family: "roboto";
+		text-transform: none;
+		font-size: 13.6px;
+		text-decoration: none;
+
 	}
 
 	#yog{
-		//font-size: 15px;
 		font-family: "roboto";	
 	}
 
 	#ava{
 		color: white;
-		padding-left: 1vh;
+		margin-left: 0.2em;
 		font-size: 3vh;
-		padding-bottom: 2vh;
-		// padding-top: 20px;
+		// margin-bottom: 50em;
 	}
 
 
 	#auth{
 		color: white;
 		padding-left: 1vh;
-		font-size: 3vh;
-		padding-bottom: 2.1vh;
+		font-size: 2.9vh;
+		// padding-bottom: 5vh;
 
 	}
 
@@ -110,6 +101,17 @@ page-register {
 		padding-right: 15vh;
 
 	}
+
+	// #chk{
+	// 	 position: fixed;
+	// 	left: 0;
+	// 	bottom: 0;
+	// 	width: 100%;
+	// 	// background-color: red;
+	// 	font-size: 39px;
+	// 	color: white;
+	// 	text-align: center;
+	// }
 
 	
 
