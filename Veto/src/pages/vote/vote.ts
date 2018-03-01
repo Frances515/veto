@@ -22,4 +22,8 @@ export class VotePage {
     console.log('ionViewDidLoad VotePage');
   }
 
+   welcome_page(): void {
+    this.navCtrl.push('WelcomePage');
+  }
+
 }

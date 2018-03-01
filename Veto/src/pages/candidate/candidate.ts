@@ -22,4 +22,8 @@ export class CandidatePage {
     console.log('ionViewDidLoad CandidatePage');
   }
 
+   welcome_page(): void {
+    this.navCtrl.push('WelcomePage');
+  }
+
 }

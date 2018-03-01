@@ -22,4 +22,8 @@ export class GeneralPage {
     console.log('ionViewDidLoad GeneralPage');
   }
 
+    welcome_page(): void {
+    this.navCtrl.push('WelcomePage');
+  }
+
 }

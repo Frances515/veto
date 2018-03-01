@@ -1,3 +1,29 @@
 page-general {
+	.genbkg{
+		background-image: url(../assets/imgs/UI/Generalbk.png) !important;
+		background-image: 999vh;
+		background-size: cover !important;
+		-webkit-background-size: cover !important;
+	}
 
+	#chk{
+		 color: white;
+		 padding-left: 150px;
+	}
+
+	#gen{
+		font-size: 20px;
+		margin-top: 1.2em;
+		margin-left: 4.4em;
+		font-family: "Roboto", "Helvetica Neue", sans-serif;
+		color: white;
+
+	}
+
+	#men{
+		color: white;
+		font-size: 22px;
+		float: right;
+
+	}
 }

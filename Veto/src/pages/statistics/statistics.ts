@@ -22,4 +22,9 @@ export class StatisticsPage {
     console.log('ionViewDidLoad StatisticsPage');
   }
 
+   welcome_page(): void {
+    this.navCtrl.push('WelcomePage');
+  }
+
+
 }
