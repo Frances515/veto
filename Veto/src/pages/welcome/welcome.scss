@@ -1,7 +1,7 @@
 page-welcome {
 	.welbk{
-		background-image: url(../assets/imgs/UI/welcomebk.png) !important;
-		background-image: 999vh;
+		background-image: url(../assets/imgs/UI/Menu2bk.png) !important;
+		background-image: 100vh;
 		background-size: cover !important;
 		-webkit-background-size: cover !important;
 	}
@@ -39,5 +39,22 @@ page-welcome {
     	color: white;
 		text-transform: none;
     }
+
+    #action{
+    	margin-top: 41.3vh;
+    	margin-left: -3.5vh;
+    	font-size: 36px;
+    }
+
+   #fab{
+   	$fab-md-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .14), 0 4px 5px rgba(0, 0, 0, .1);
+   	margin-bottom: 17vh;
+   	margin-left: 8vh;
+   }
+
+   #fabright{
+   	margin-bottom: 17vh;
+   	margin-right: 8vh;
+   }
 
 }

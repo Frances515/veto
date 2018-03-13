@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { AngularFireStorage } from 'angularfire2/storage';
+
 
 /**
  * Generated class for the CandidatePage page.
@@ -15,7 +17,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CandidatePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private afs: AngularFireStorage, public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -27,3 +29,4 @@ export class CandidatePage {
   }
 
 }
+ 

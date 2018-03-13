@@ -1,1 +1,32 @@
-<ion-nav [root]="rootPage"></ion-nav>
+
+
+<ion-menu type="overlay" side="right" [content]="content">
+<ion-content>
+  <ion-list>
+    <br>
+    <br>
+      <button ion-item (click)="openCandidatePage()"><ion-icon name="people"></ion-icon>
+      </button>
+      <button ion-item (click)="openGeneralPage()">
+        <ion-icon name="paper"></ion-icon>
+      </button>
+      <button ion-item (click)="openStatisticsPage()">
+        <ion-icon name="stats"></ion-icon>
+      </button>
+      <button ion-item (click)="openVotePage()">
+        <ion-icon name="thumbs-up"></ion-icon>
+      </button>
+      <footer>
+      	<button ion-item (click)="openHomePage()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+      </footer>
+          </ion-list>
+
+</ion-content>
+
+</ion-menu>
+
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>

@@ -4,40 +4,36 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
 
-  <ion-navbar>
-    <ion-title>LoginPage</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
 <ion-content padding class="lgbk">
 
-	 <ion-item class="trans" >
-      <ion-label id="txt" color="light" stacked>ID Number</ion-label>
-      <ion-input color="white" type="text"></ion-input>
+  <div>
+      <p id="log"> Login </p>
+  </div>
+
+   <ion-item class="trans" >
+      <ion-label id="uname" color="light" floating>Username</ion-label>
+      <ion-input [(ngModel)]= "userEm" color="white" type="text" #uemail></ion-input>
+  </ion-item>
+<br>
+<ion-item class="trans" >
+      <ion-label id="pass" color="light" floating>Password</ion-label>
+      <ion-input [(ngModel)]= "userPass" color="white" type="password" #pass1></ion-input>
   </ion-item>
 
-  <!-- <div id="authentication">
-    <button ion-button icon-only clear>
-  <ion-icon id="auth" name="add">Authentication</ion-icon>
-</button> -->
-<!-- <button ion-button icon-only clear><ion-icon id="help" name="help-circle"></ion-icon></button>
- -->  <!-- </div> -->
-<br>
- <button id="authentication" ion-button icon-right clear>
-  Authentication
-  <ion-icon name="add"></ion-icon>
-</button>
-
- <ion-footer>
-      <button ion-button icon-only clear (click)="welcome_page()">
+   <ion-footer> 
+      <button ion-button icon-only clear (click)="general_news()">
   <ion-icon id="chk" name="checkmark"></ion-icon>
 </button>
 
   </ion-footer>
+
+  <button ion-button block clear id="regBtn" (click) = "registerPage()">Register?
+  </button>
+
+
   
 
 </ion-content>

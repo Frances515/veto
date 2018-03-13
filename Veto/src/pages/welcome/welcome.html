@@ -6,18 +6,27 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>welcome</ion-title>
-  </ion-navbar>
 
 </ion-header>
 
-
+ 
 <ion-content padding class="welbk">
 
 	<p id="wel"> Welcome </p>
+<!-- <div id="btns">
+  <ion-item>
+    <ion-row>
+      <ion-col width-50>
+        <button ion-button type="button" full round large (click)="selectImage()"><ion-icon name="md-image"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+</div> -->
 
-	<div id = "btns">
+<button id="action" ion-button icon-right clear (click)="selectImage()"> <ion-icon name="md-image"></ion-icon></button>
+
+
+	<!-- <div id = "btns">
   <button ion-button color="candidate"  block id="candBtn" (click)="candidate_Page()">Candidate
   </button>
 
@@ -28,7 +37,29 @@
   </button>
 
   <button ion-button color="gen" block id="genBtn" (click)="general_Page()">General News 
-  </button>
-</div>
+  </button> -->
+
+  <!-- <button id="action" ion-button icon-right clear > <ion-icon color="dark" name="settings"></ion-icon></button>
+  -->
+
+
+<!-- </div> -->
+
+
+ <!--  <ion-fab  right top id="fab">
+    <button ion-fab mini ><ion-icon name="settings"></ion-icon></button>
+    <ion-fab-list side="down">
+      <button ion-fab (click)="openCandidate()"><ion-icon name="contacts"></ion-icon></button>
+      <button ion-fab (click)="openVote()"><ion-icon name="thumbs-up"></ion-icon></button>
+      <button ion-fab (click)="openStatistics()"><ion-icon name="stats"></ion-icon></button>
+      <button ion-fab (click)="openGeneral()"><ion-icon name="paper"></ion-icon></button>
+      <button ion-fab (click)="openGeneral()"><ion-icon name="help-circle"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab> -->
+
+  <ion-fab  center bottom id="fabright">
+    <button ion-fab mini (click)="logout()"><ion-icon name="log-out"></ion-icon></button>  
+  </ion-fab> 
+
 
 </ion-content>

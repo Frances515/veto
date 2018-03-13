@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AngularFireStorage } from 'angularfire2/storage';
+import firebase from 'firebase';
+
+
 
 /**
  * Generated class for the WelcomePage page.
@@ -15,27 +19,31 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class WelcomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private afs: AngularFireStorage, public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad WelcomePage');
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad WelcomePage');
+  // }
 
-  candidate_Page(): void {
+  openCandidate(): void {
     this.navCtrl.push('CandidatePage');
   }
 
-  vote_Page(): void {
+  openVote(): void {
   	this.navCtrl.push('VotePage');
   }
 
-  statistics_Page(): void {
+  openStatistics(): void {
   	this.navCtrl.push('StatisticsPage');
   }
 
-  general_Page(): void {
+  openGeneral(): void {
   	this.navCtrl.push('GeneralPage');
+  }
+
+  logout(): void{
+    this.navCtrl.push('HomePage');
   }
 
 }

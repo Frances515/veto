@@ -1,6 +1,6 @@
 
-@import "roboto";
-@import "noto-sans";
+//@import "roboto";
+//@import "noto-sans";
 
 page-register {
 	.regbkg {
@@ -14,18 +14,22 @@ page-register {
 	}
 
 	#reg{
-		font-size: 39px;
-		margin-top: 3.2em;
-		margin-left: 1.4em;
+		font-size: 38px;
+		margin-top: 0.2em;
 		font-family: "Roboto", "Helvetica Neue", sans-serif;
+		text-align: center;
 
 	}
+
+	
 	
 
-	#chk{
-		 color: white;
-		 padding-left: 150px;
-	}
+	// #chk{
+	// 	 color: white; 
+	// 	 padding-left: 150px;
+		 
+
+	// }
 
 	#ic{
 		color: white;
@@ -46,7 +50,18 @@ page-register {
 	}
 
 	#txt{
+		padding-top: 0.1vh;
+		font-size: 12.3px;
+	}
+
+	#pass{
 		// padding-top: 30vh;
+		font-size: 12.3px;
+	}
+
+	#cpass{
+		// padding-top: 30vh;
+		font-size: 12.3px;
 	}
 
 	p{
@@ -76,6 +91,13 @@ page-register {
 
 	#yog{
 		font-family: "roboto";	
+		font-size: 12.3px;
+	}
+
+	#maj{
+		font-family: "roboto";	
+		font-size: 12.3px;
+		
 	}
 
 	#ava{
@@ -102,16 +124,25 @@ page-register {
 
 	}
 
-	// #chk{
-	// 	 position: fixed;
-	// 	left: 0;
-	// 	bottom: 0;
-	// 	width: 100%;
-	// 	// background-color: red;
-	// 	font-size: 39px;
+	// #foot{
 	// 	color: white;
-	// 	text-align: center;
+	// 	padding-left: 150px;
+	// 	padding-top: 2.0vh;
+	// 	font-size: 30px;
+
 	// }
+
+	#chk{
+		padding-left: 150px;
+		color: white;
+		font-size: 30px;
+	}
+
+	#signBtn{
+		font-style: italic;
+		color: black;
+		text-align: center;
+	}
 
 	
 

@@ -10,10 +10,11 @@
   
   
   <ion-content padding class="regbkg">
+    <div>
     <ion-icon id="ic" name="information-circle"></ion-icon>
 
     <p id="reg"> Register </p>
-  
+  </div>
   
   <!-- 
     <ion-list id="list">
@@ -21,7 +22,7 @@
     <ion-item class="trans">
       <ion-label floating>Username</ion-label>
       <ion-input type="text"></ion-input>
-    </ion-item>
+    </ion-item> 
   
     <ion-item class="trans">
       <ion-label floating>Password</ion-label>
@@ -29,69 +30,92 @@
     </ion-item>
   
   </ion-list> -->
+<!-- <div>
+ --> <!--  <ion-list> -->
   <ion-item class="trans" >
-      <ion-label id="txt" color="light" stacked>ID Number</ion-label>
-      <ion-input color="white" type="text"></ion-input>
+      <ion-label id="txt" color="light" floating>Email </ion-label>
+      <ion-input [(ngModel)]= "em" color="white" type="text" #email></ion-input>
   </ion-item>
   <ion-item class="trans">
-    <ion-label id="yog" color="light" stacked>Year of Graduation</ion-label>
-      <ion-input color="white" type="text"></ion-input>
+    <ion-label id="pass" color="light" floating>Password</ion-label>
+      <ion-input color="white" type="password" #password></ion-input>
   </ion-item>
-  <!-- <ion-item class="trans">
-    <ion-label color="light">Avatar</ion-label>
+   <ion-item class="trans">
+    <ion-label id="cpass" color="light" floating>Confirm Password</ion-label>
+      <ion-input color="white" type="password" #pass2></ion-input>
+  </ion-item>
+  <!-- <ion-item class="trans" >
+  <ion-label id="yog" color="light" floating>Year of Graduation</ion-label>
+      <ion-input [(ngModel)] = "yrs" color="white" type="text" #yog></ion-input>
+  </ion-item>  -->
+  <ion-item class="trans">
+  <ion-label id="yog" color="light" floating>Year of Graduation</ion-label>
+  <ion-datetime displayFormat="MMM, YYYY" min="2009" max="2099" [(ngModel)]="myDate" #yog></ion-datetime>
+</ion-item>
+ <!--  <ion-item class="trans" >
+   <ion-label id="yog" color="light" floating>Gender</ion-label>
+      <ion-input [(ngModel)] = "gender" color="white" type="text" #gen></ion-input>
   </ion-item> -->
-  
-<!--   <p>Avatar<ion-icon id="ava" name="add"></ion-icon></p> -->
+   <ion-item class="trans">
+    <ion-label id="yog" color="light">Gender</ion-label>
+    <ion-select [(ngModel)]="gender" #gen>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
 
-<!-- <div id="avatar">
-  <br>
-Avatar<button ion-button icon-only clear>
-  <ion-icon id="ava" name="add"></ion-icon>
-</button>
-</div> -->
+<ion-list>
+  <ion-item class="trans">
+    <ion-label id="maj" color="light">Majors</ion-label>
+    <ion-select [(ngModel)]="major">
+      <ion-option value="ba">Business Administration</ion-option>
+      <ion-option value="ce">Computer Engineering</ion-option>
+      <ion-option value="cs">Computer Science</ion-option>
+      <ion-option value="ee">Electrical & Electronic Engineering</ion-option>
+      <ion-option value="mis">Management Information Systems</ion-option>
+      <ion-option value="me">Mechanical Engineering</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
 
-
-  <!-- <ion-item class="trans">
-     <ion-label color="light">Authentication</ion-label>
-  </ion-item> -->
-  <!-- <p>Authentication<ion-icon id="auth" name="add"></ion-icon><br><ion-icon name="help-circle"></ion-icon>
-  </p> -->
-
-  <!-- <div id="authentication">
-    Authentication<button ion-button icon-only clear>
-  <ion-icon id="auth" name="add"></ion-icon>
-</button> -->
-<!-- <button ion-button icon-only clear><ion-icon id="help" name="help-circle"></ion-icon></button>
- -->  <!-- </div> -->
-
- <br>
- <button id="avatar" ion-button icon-right clear>
-  Avatar
+  <!-- </div> -->
+ <!-- <button id="avatar" ion-button icon-right clear> -->
+ <!--  Avatar
   <ion-icon name="add"></ion-icon>
-</button>
+</button> -->
 
- <br>
+ <!-- <br>
  <button id="authentication" ion-button icon-right clear>
   Authentication
   <ion-icon name="add"></ion-icon>
 </button>
-  
+   -->
 <!-- <br>
 <button ion-button icon-only clear><ion-icon id="help" name="help-circle"></ion-icon></button>
   </p> -->
 
-  
-
-
-  
-
-  
+<!-- <div id="foot">
   <ion-footer>
       <button ion-button icon-only clear (click)="login_page()">
-  <ion-icon id="chk" name="checkmark"></ion-icon>
+  <ion-icon name="checkmark"></ion-icon>
 </button>
 
+
+
   </ion-footer>
+</div> -->
+<!-- </ion-list>
+ -->  
+
+ <button ion-button block clear id="signBtn" (click) = "signIn()">Sign In?
+  </button>
+
+<ion-footer>
+ <button ion-button icon-only clear (click)="login_page()">
+  <ion-icon id="chk" name="checkmark" ></ion-icon>
+</button>
+</ion-footer>
+
   
   </ion-content>
    

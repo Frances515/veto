@@ -1,6 +1,6 @@
 page-login {
 	.lgbk {
-		background-image: url(../assets/imgs/UI/Loginbk2.png) !important;
+		background-image: url(../assets/imgs/UI/Loginbk.png) !important;
 		// background-repeat: no-repeat;
 		// background-position: center;
 		background-image: 999vh;
@@ -9,12 +9,22 @@ page-login {
 		
 	}
 
+	#log{
+		font-size: 38px;
+		margin-top: 3.6em;
+		text-align: center;
+		font-family: "Roboto", "Helvetica Neue", sans-serif;
+		color: white;
+
+	}
+
+
 	.trans {
 		background-color: transparent !important;	
 	}
 
 	#txt{
-		padding-top: 30vh;
+		padding-top: 6vh;
 	}
 
 	#authentication{
@@ -27,7 +37,7 @@ page-login {
 	}
 
 
-	#auth{
+	#auth{ 
 		color: white;
 		// padding-left: 1vh;
 		font-size: 3.2vh;
@@ -36,7 +46,14 @@ page-login {
 	}
 
 	#chk{
-		 color: white;
-		 padding-left: 150px;
+		color: white;
+		padding-left: 150px;
+		
+	}
+
+	#regBtn{
+		margin-top: 1.8vh;
+		font-style: italic;
+		color: black;
 	}
 }

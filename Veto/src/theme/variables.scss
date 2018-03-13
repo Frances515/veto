@@ -22,6 +22,8 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
+$menu-width: 110px;
+
 
 
 
@@ -49,6 +51,7 @@ $colors: (
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
+$item-ios-detail-push-show: none;
 
 
 

@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { ToastController } from 'ionic-angular';
+import { LoadingController } from 'ionic-angular';
+
 
 /**
  * Generated class for the LoginPage page.
@@ -8,22 +12,93 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage() 
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild('uemail') user;
+  @ViewChild('pass1') password;
+
+  userEm
+  userPass
+
+  constructor(public loadingCtrl: LoadingController, public toastCtrl: ToastController,private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  welcome_page(): void {
-    this.navCtrl.push('WelcomePage');
+
+  presentToast(){
+    let toast = this.toastCtrl.create({
+      message: 'Log in successful',
+      duration: 3000
+    });
+    toast.present();
+  }
+
+
+  presentLoadingText(){
+    let loading = this.loadingCtrl.create({
+      spinner: 'bubbles',
+      content: 'Loading...'
+    });
+
+    loading.present();
+
+    setTimeout(() => {
+      this.navCtrl.push('GeneralPage');
+    }, 1000);
+
+    setTimeout(() => {
+      loading.dismiss();
+    }, 1000);
+  }
+
+  errorToast(str){
+    let toast = this.toastCtrl.create({
+      message: 'An error occurred ' + str + '. Please try again or perharps you may want to register',
+      duration: 4000
+    });
+    toast.present();
+  }
+
+    errorLoadingText(){
+    let loading = this.loadingCtrl.create({
+      spinner: 'bubbles',
+      content: 'Loading...'
+    });
+
+    loading.present();
+
+    setTimeout(() => {
+      loading.dismiss();
+    }, 100);
+  }
+
+  general_news(): void {
+     if(this.user.value.includes("@ashesi.edu.gh")){
+    this.fire.auth.signInAndRetrieveDataWithEmailAndPassword(this.user.value, this.password.value)
+    .then(data =>{
+      this.presentToast();
+      this.presentLoadingText();
+    }) 
+    .catch(error => {
+      this.errorToast(error);
+      this.errorLoadingText();
+  });
+   }
+   
+  
+    
+  }
+
+  registerPage(): void{
+    this.navCtrl.push('RegisterPage');
   }
 
 }
